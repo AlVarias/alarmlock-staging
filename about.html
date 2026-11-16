@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us &amp; Security Checklist | AlarmLock Auckland</title>
+  <meta name="description" content="Learn about AlarmLock Ltd — 25+ years serving Auckland from East Tamaki and Papakura with expert locksmithing, digital locks, key cutting, and security checklists." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span>Auckland Locksmiths &amp; Security Specialists — 25+ Years Experience</span>
+      <div class="top-bar-links">
+        <a href="tel:0800420420">Freephone: 0800 420 420</a>
+        <a href="tel:021946115">Locksmith Mob: 021 946 115</a>
+        <a href="mailto:info@alarmlock.co.nz">info@alarmlock.co.nz</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Navigation -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="AlarmLock Home">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <circle cx="12" cy="10" r="2"/>
+            <path d="M12 12v3"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Alarm<span>Lock</span></span>
+          <span class="brand-tagline">Auckland Security &amp; Locksmiths</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link active">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        <li><a href="tel:0800420420" class="nav-cta">Call 0800 420 420</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>About Us</span>
+      </div>
+      <h1>About AlarmLock Ltd</h1>
+      <p>Over 25 years of dedicated locksmithing and physical security experience across East Tamaki, Papakura, and Greater Auckland.</p>
+    </div>
+  </section>
+
+  <!-- Main Story & Expertise -->
+  <section class="section">
+    <div class="container grid-2" style="align-items:start;">
+      <div>
+        <span style="color:var(--red-primary); font-weight:800; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.08em;">Our Story &amp; Standards</span>
+        <h2 style="font-size:2rem; color:var(--gray-900); margin:10px 0 18px;">25 Years Keeping Auckland Properties Secure</h2>
+        <p style="color:var(--gray-600); margin-bottom:16px;">AlarmLock has been operating in the Auckland security industry for over 25 years. Whether you are locked out, upgrading to a Yale digital lock, rekeying a new home, or setting up a commercial master key system, we deliver reliable workmanship at a fair, transparent price.</p>
+        <p style="color:var(--gray-600); margin-bottom:22px;">From our East Tamaki workshop at <strong>Unit 3, 19 Ormiston Road</strong> and mobile service vehicles covering Papakura and Auckland-wide, we combine one of the broadest ranges of key blanks in the region with the latest precision key-cutting machinery.</p>
+
+        <div class="card" style="background-color:var(--red-light); border-color:var(--red-border);">
+          <h3 style="margin-top:0; color:var(--red-primary);">Why Choose a Security Professional?</h3>
+          <ul class="feature-list" style="grid-template-columns:1fr; margin:12px 0 0;">
+            <li>25+ years of proven Auckland locksmithing track record</li>
+            <li>Both mobile onsite service &amp; East Tamaki workshop support</li>
+            <li>High-grade hardware backed by manufacturer &amp; workmanship warranty</li>
+            <li>Clear specialist routing for Alarms &amp; CCTV via JB Electronics</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Interactive Security Checklist -->
+      <div class="checklist-box" id="checklist">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px;">
+          <h3 style="font-size:1.35rem; color:var(--gray-900);">Home &amp; Business Security Checklist</h3>
+          <span id="securityScore" class="status-pill">0 of 6 Completed</span>
+        </div>
+        <p style="color:var(--gray-600); font-size:0.94rem; margin-bottom:16px;">Tick off the items below to review your property's current protection level:</p>
+
+        <label class="checklist-item">
+          <input type="checkbox" class="sec-check" />
+          <span><strong>Deadbolts Fitted on All Exterior Doors:</strong> Solid-core external doors have quality deadbolts installed.</span>
+        </label>
+
+        <label class="checklist-item">
+          <input type="checkbox" class="sec-check" />
+          <span><strong>Locks Rekeyed After Moving In:</strong> Previous owners, tenants, or contractors no longer hold working keys.</span>
+        </label>
+
+        <label class="checklist-item">
+          <input type="checkbox" class="sec-check" />
+          <span><strong>Window &amp; Sliding Door Security:</strong> Ground-floor windows and ranch sliders have key-operated stays or patio bolts.</span>
+        </label>
+
+        <label class="checklist-item">
+          <input type="checkbox" class="sec-check" />
+          <span><strong>Keyless / Controlled Entry Upgraded:</strong> High-traffic doors use a digital lock (such as Yale 3109) or restricted key profile.</span>
+        </label>
+
+        <label class="checklist-item">
+          <input type="checkbox" class="sec-check" />
+          <span><strong>Spare Transponder Car Key &amp; Gate Remote:</strong> You have a tested spare vehicle key and fresh remote batteries.</span>
+        </label>
+
+        <label class="checklist-item">
+          <input type="checkbox" class="sec-check" />
+          <span><strong>Monitored Alarm &amp; CCTV Active:</strong> Electronic detection is serviced (contact Jesse at JB Electronics on 027 4977 208).</span>
+        </label>
+
+        <div style="margin-top:22px;">
+          <a href="contact.html?service=Security%20Audit%20%26%20Lock%20Upgrade" class="btn btn-primary" style="width:100%;">Book a Lock &amp; Security Upgrade</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Division Update -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Client Confidence</span>
+        <h2>Trusted by Auckland Homeowners &amp; Businesses</h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <p style="font-style:italic; color:var(--gray-800);">"Fast, tidy installation of our new Yale digital lock in East Tamaki. Took the time to walk us through setting up our family PIN codes and tags."</p>
+          <strong style="color:var(--red-primary);">— Residential Client, East Tamaki</strong>
+        </div>
+
+        <div class="card">
+          <p style="font-style:italic; color:var(--gray-800);">"Sorted a tricky transponder car key and replacement garage remote on the spot when other places couldn't match the blank. Highly recommended."</p>
+          <strong style="color:var(--red-primary);">— Automotive Customer, Papakura</strong>
+        </div>
+
+        <div class="card">
+          <p style="font-style:italic; color:var(--gray-800);">"AlarmLock rekeyed our entire commercial premises and set up a clean master key system on schedule and within budget."</p>
+          <strong style="color:var(--red-primary);">— Commercial Property Manager, Auckland</strong>
+        </div>
+      </div>
+
+      <div class="notice-banner" style="margin-top:40px;">
+        <h4>Alarms &amp; Camera Division Update</h4>
+        <p style="color:var(--gray-800);">Jesse (<strong>JB Electronics</strong>) recently acquired the Alarms &amp; Camera side of AlarmLock. For all burglar alarm and CCTV enquiries, please call Jesse directly on <a href="tel:0274977208" style="color:var(--red-primary); font-weight:800;">027 4977 208</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 style="font-size:1.3rem;">Alarm<span style="color:#D91E2A;">Lock</span> Ltd</h4>
+          <p>Trusted Auckland locksmiths and security hardware specialists for over 25 years. Residential and commercial lock installation, rekeying, digital locks, key cutting, and gate automation.</p>
+          <p><strong>Workshop:</strong> Unit 3, 19 Ormiston Road, East Tamaki, Auckland<br>
+          <strong>Hours:</strong> Monday – Friday (By Appointment)</p>
+        </div>
+
+        <div>
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="about.html">About Us &amp; Checklist</a></li>
+            <li><a href="contact.html">Contact &amp; Bookings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Product Range</h4>
+          <ul>
+            <li><a href="products.html">Yale 3109 &amp; Digital Locks</a></li>
+            <li><a href="products.html">Deadbolts &amp; Mortice Locks</a></li>
+            <li><a href="products.html">Automotive &amp; Transponder Keys</a></li>
+            <li><a href="products.html">Gate Automation &amp; Remotes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Direct Contacts</h4>
+          <p><strong>Freephone:</strong> <a href="tel:0800420420">0800 420 420</a></p>
+          <p><strong>Locksmith Mobile:</strong> <a href="tel:021946115">021 946 115</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@alarmlock.co.nz">info@alarmlock.co.nz</a></p>
+          <p style="margin-top:12px; font-size:0.86rem; border-top:1px solid rgba(255,255,255,0.15); padding-top:10px;">
+            <strong>Alarms &amp; Cameras:</strong> Contact Jesse directly at JB Electronics on <a href="tel:0274977208">027 4977 208</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 AlarmLock Ltd. All rights reserved.</span>
+        <span>East Tamaki &bull; Papakura &bull; Greater Auckland</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

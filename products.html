@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | AlarmLock Auckland — Digital Locks, Locks, Car Keys &amp; Gate Automation</title>
+  <meta name="description" content="Explore AlarmLock's security hardware range: Yale 3109 digital locks, residential & commercial locks, automotive transponder keys, garage remotes, batteries, and gate automation." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span>Auckland Locksmiths &amp; Security Specialists — 25+ Years Experience</span>
+      <div class="top-bar-links">
+        <a href="tel:0800420420">Freephone: 0800 420 420</a>
+        <a href="tel:021946115">Locksmith Mob: 021 946 115</a>
+        <a href="mailto:info@alarmlock.co.nz">info@alarmlock.co.nz</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Navigation -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="AlarmLock Home">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <circle cx="12" cy="10" r="2"/>
+            <path d="M12 12v3"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Alarm<span>Lock</span></span>
+          <span class="brand-tagline">Auckland Security &amp; Locksmiths</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="products.html" class="nav-link active">Products</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        <li><a href="tel:0800420420" class="nav-cta">Call 0800 420 420</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Products</span>
+      </div>
+      <h1>Security Hardware &amp; Products</h1>
+      <p>Browse our range of digital locks, mechanical hardware, automotive transponder keys, remotes, and gate automation systems.</p>
+    </div>
+  </section>
+
+  <!-- Products Catalog Section -->
+  <section class="section">
+    <div class="container">
+      <!-- Interactive Filter & Search Controls -->
+      <div class="filter-bar">
+        <div class="filter-tabs" role="tablist" aria-label="Product Categories">
+          <button class="filter-btn active" data-filter="all">All Products</button>
+          <button class="filter-btn" data-filter="digital">Digital Locks</button>
+          <button class="filter-btn" data-filter="locks">Mechanical Locks</button>
+          <button class="filter-btn" data-filter="automotive">Automotive Keys</button>
+          <button class="filter-btn" data-filter="remotes">Remotes &amp; Batteries</button>
+          <button class="filter-btn" data-filter="gates">Gate Automation</button>
+        </div>
+        <input type="search" id="productSearch" class="search-input" placeholder="Search locks, Yale 3109, car keys..." aria-label="Search products" />
+      </div>
+
+      <div id="noProductsFound" style="display:none; text-align:center; padding:48px 20px; background:var(--off-white); border-radius:var(--radius-md); margin-bottom:24px;">
+        <h3 style="color:var(--gray-900); margin-bottom:8px;">No matching products found</h3>
+        <p style="color:var(--gray-600);">Try clearing your search or call our workshop on <a href="tel:0800420420" style="color:var(--red-primary); font-weight:700;">0800 420 420</a> — we stock hundreds of specialty blanks and hardware items.</p>
+      </div>
+
+      <div class="grid-3" id="productsGrid">
+        <!-- Digital Locks -->
+        <div class="card product-item" data-category="digital">
+          <span class="product-tag">Popular Digital Locks</span>
+          <h3>Yale 3109 Digital Mortice Lock</h3>
+          <p>Keyless PIN code and RFID proximity card/tag entry with voice guide, auto-locking, tamper alarm, and mechanical key override.</p>
+          <a href="contact.html?service=Yale%203109%20Digital%20Lock" class="btn btn-primary btn-sm">Enquire / Book Install</a>
+        </div>
+
+        <div class="card product-item" data-category="digital">
+          <span class="product-tag">Latest Digital Locks</span>
+          <h3>Smart Deadbolts &amp; Touchpad Locks</h3>
+          <p>Modern keyless deadbolts and lever sets for timber and aluminium joinery. Ideal for homes, Airbnbs, and small offices.</p>
+          <a href="contact.html?service=Smart%20Digital%20Deadbolt" class="btn btn-outline btn-sm">Request Options &amp; Pricing</a>
+        </div>
+
+        <div class="card product-item" data-category="digital">
+          <span class="product-tag">Commercial Access</span>
+          <h3>Digital Keypad &amp; Code Locks</h3>
+          <p>Heavy-duty mechanical and electronic push-button code locks for commercial offices, storerooms, and staff-only doors.</p>
+          <a href="contact.html?service=Commercial%20Keypad%20Lock" class="btn btn-outline btn-sm">Request Quote</a>
+        </div>
+
+        <!-- Mechanical Locks -->
+        <div class="card product-item" data-category="locks">
+          <span class="product-tag">Mechanical Locks</span>
+          <h3>Deadbolts, Mortice &amp; Window Locks</h3>
+          <p>Insurance-compliant deadbolts, entrance sets, sliding door locks, and window stays supplied and fitted to NZ security standards.</p>
+          <a href="contact.html?service=Residential%20Locks%20%26%20Deadbolts" class="btn btn-outline btn-sm">Book Lock Fitting</a>
+        </div>
+
+        <div class="card product-item" data-category="locks">
+          <span class="product-tag">Commercial &amp; Strata</span>
+          <h3>Master Keying &amp; Restricted Cylinders</h3>
+          <p>Custom-designed master key hierarchies ensuring keys cannot be duplicated without authorized sign-off.</p>
+          <a href="contact.html?service=Master%20Keying%20System" class="btn btn-outline btn-sm">Consult a Locksmith</a>
+        </div>
+
+        <!-- Automotive Keys -->
+        <div class="card product-item" data-category="automotive">
+          <span class="product-tag">Automotive Keys</span>
+          <h3>Transponder &amp; Chip Car Keys</h3>
+          <p>Replacement and spare transponder keys cut and programmed using the latest automotive key cutting and diagnostics technology.</p>
+          <a href="contact.html?service=Transponder%20Car%20Key" class="btn btn-primary btn-sm">Get Car Key Quote</a>
+        </div>
+
+        <div class="card product-item" data-category="automotive">
+          <span class="product-tag">Automotive &amp; House</span>
+          <h3>Keys Cut to Code &amp; Key Blanks</h3>
+          <p>Lost all keys? We cut ignition and door keys directly to manufacturer code and carry one of Auckland's widest blank selections.</p>
+          <a href="contact.html?service=Keys%20Cut%20to%20Code" class="btn btn-outline btn-sm">Enquire Now</a>
+        </div>
+
+        <!-- Remotes & Batteries -->
+        <div class="card product-item" data-category="remotes">
+          <span class="product-tag">Remotes &amp; Batteries</span>
+          <h3>Garage Door &amp; Gate Remotes</h3>
+          <p>Genuine and compatible replacement remotes for major NZ garage door and automatic gate openers, coded and tested in-store.</p>
+          <a href="contact.html?service=Garage%20%26%20Gate%20Remotes" class="btn btn-outline btn-sm">Order Replacement Remote</a>
+        </div>
+
+        <!-- Gate Automation -->
+        <div class="card product-item" data-category="gates">
+          <span class="product-tag">Gate Automation</span>
+          <h3>Sliding &amp; Swing Gate Motors</h3>
+          <p>Complete automated driveway gate motor kits, safety photocells, keypad entry posts, and ongoing maintenance servicing.</p>
+          <a href="contact.html?service=Gate%20Automation" class="btn btn-primary btn-sm">Book Gate Assessment</a>
+        </div>
+      </div>
+
+      <!-- Alarms & Cameras Cross-link -->
+      <div class="notice-banner" style="margin-top:44px;">
+        <h4>Need Burglar Alarms or Security Cameras?</h4>
+        <p style="color:var(--gray-800);">Contact <strong>Jesse at JB Electronics</strong> on <a href="tel:0274977208" style="color:var(--red-primary); font-weight:800;">027 4977 208</a> for all alarm panels, sensors, and CCTV camera packages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 style="font-size:1.3rem;">Alarm<span style="color:#D91E2A;">Lock</span> Ltd</h4>
+          <p>Trusted Auckland locksmiths and security hardware specialists for over 25 years. Residential and commercial lock installation, rekeying, digital locks, key cutting, and gate automation.</p>
+          <p><strong>Workshop:</strong> Unit 3, 19 Ormiston Road, East Tamaki, Auckland<br>
+          <strong>Hours:</strong> Monday – Friday (By Appointment)</p>
+        </div>
+
+        <div>
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Our Products</a></li>
+            <li><a href="about.html">About Us &amp; Checklist</a></li>
+            <li><a href="contact.html">Contact &amp; Bookings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Product Range</h4>
+          <ul>
+            <li><a href="products.html">Yale 3109 &amp; Digital Locks</a></li>
+            <li><a href="products.html">Deadbolts &amp; Mortice Locks</a></li>
+            <li><a href="products.html">Automotive &amp; Transponder Keys</a></li>
+            <li><a href="products.html">Gate Automation &amp; Remotes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Direct Contacts</h4>
+          <p><strong>Freephone:</strong> <a href="tel:0800420420">0800 420 420</a></p>
+          <p><strong>Locksmith Mobile:</strong> <a href="tel:021946115">021 946 115</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@alarmlock.co.nz">info@alarmlock.co.nz</a></p>
+          <p style="margin-top:12px; font-size:0.86rem; border-top:1px solid rgba(255,255,255,0.15); padding-top:10px;">
+            <strong>Alarms &amp; Cameras:</strong> Contact Jesse directly at JB Electronics on <a href="tel:0274977208">027 4977 208</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 AlarmLock Ltd. All rights reserved.</span>
+        <span>East Tamaki &bull; Papakura &bull; Greater Auckland</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
