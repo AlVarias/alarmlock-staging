@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Molino Garcia — Locksmith | AlarmLock Auckland</title>
+  <meta name="description" content="Digital calling card for Molino Garcia, Locksmith at AlarmLock Auckland." />
+  <style>
+    :root {
+      --red-primary: #D91E2A;
+      --red-dark: #A6141E;
+      --red-light: #FEF2F2;
+      --red-border: #FECACA;
+      --white: #FFFFFF;
+      --off-white: #F8FAFC;
+      --gray-200: #E2E8F0;
+      --gray-600: #475569;
+      --gray-800: #1E293B;
+      --gray-900: #0F172A;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(160deg, var(--red-light) 0%, var(--off-white) 55%, var(--red-light) 100%);
+      color: var(--gray-800);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 14px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card-shell {
+      width: 100%;
+      max-width: 440px;
+      background-color: var(--white);
+      border-radius: 22px;
+      border: 2px solid var(--red-primary);
+      box-shadow: 0 18px 40px rgba(217, 30, 42, 0.14);
+      overflow: hidden;
+    }
+
+    .card-banner {
+      background: linear-gradient(135deg, var(--red-primary) 0%, var(--red-dark) 100%);
+      color: var(--white);
+      padding: 24px 24px 54px;
+      text-align: center;
+      position: relative;
+    }
+
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+
+    .brand-sub {
+      font-size: 0.78rem;
+      opacity: 0.9;
+      margin-top: 6px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .avatar-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: -42px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .avatar-circle {
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      background-color: var(--white);
+      border: 4px solid var(--red-primary);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--red-primary);
+    }
+
+    .identity {
+      text-align: center;
+      padding: 14px 24px 20px;
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .identity h1 {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--gray-900);
+      letter-spacing: -0.02em;
+    }
+
+    .role-badge {
+      display: inline-block;
+      margin-top: 6px;
+      background-color: var(--red-light);
+      color: var(--red-primary);
+      border: 1px solid var(--red-border);
+      font-size: 0.88rem;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .identity p {
+      font-size: 0.88rem;
+      color: var(--gray-600);
+      margin-top: 10px;
+    }
+
+    .cta-section {
+      padding: 18px 22px 8px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+    }
+
+    .btn-save {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      background-color: var(--red-primary);
+      color: var(--white);
+      border: 2px solid var(--red-primary);
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .btn-save:hover {
+      background-color: var(--red-dark);
+      border-color: var(--red-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-qr-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background-color: var(--white);
+      color: var(--red-primary);
+      border: 2px solid var(--red-primary);
+      border-radius: 12px;
+      padding: 14px 14px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .btn-qr-toggle:hover {
+      background-color: var(--red-light);
+    }
+
+    .contact-list {
+      padding: 12px 22px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 13px 15px;
+      background-color: var(--off-white);
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .contact-row:hover {
+      border-color: var(--red-primary);
+      background-color: var(--red-light);
+      transform: translateX(2px);
+    }
+
+    .row-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: var(--white);
+      border: 1px solid var(--red-border);
+      color: var(--red-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .row-text small {
+      display: block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--gray-600);
+    }
+
+    .row-text strong {
+      font-size: 1.02rem;
+      font-weight: 800;
+      color: var(--gray-900);
+    }
+
+    .quick-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 2px;
+    }
+
+    .mini-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 11px 12px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid var(--gray-200);
+      background-color: var(--white);
+      color: var(--gray-800);
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .mini-btn:hover {
+      border-color: var(--red-primary);
+      color: var(--red-primary);
+      background-color: var(--red-light);
+    }
+
+    .qr-drawer {
+      display: none;
+      margin: 0 22px 20px;
+      padding: 18px;
+      background-color: var(--off-white);
+      border: 1px dashed var(--red-primary);
+      border-radius: 14px;
+      text-align: center;
+    }
+
+    .qr-drawer.open { display: block; }
+
+    .qr-frame {
+      background: var(--white);
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid var(--gray-200);
+      display: inline-block;
+      margin: 10px 0;
+    }
+
+    .qr-url-label {
+      font-size: 0.76rem;
+      color: var(--gray-600);
+      word-break: break-all;
+      margin-bottom: 10px;
+    }
+
+    .card-footer {
+      background-color: var(--gray-900);
+      color: rgba(255, 255, 255, 0.78);
+      text-align: center;
+      padding: 14px 20px;
+      font-size: 0.8rem;
+    }
+
+    .card-footer a {
+      color: var(--white);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card-shell">
+    <div class="card-banner">
+      <div class="brand-pill">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <span>ALARMLOCK LTD</span>
+      </div>
+      <div class="brand-sub">Auckland Security &amp; Locksmiths</div>
+    </div>
+
+    <div class="avatar-wrap">
+      <div class="avatar-circle" id="cardInitials">MG</div>
+    </div>
+
+    <div class="identity">
+      <h1 id="cardName">Molino Garcia</h1>
+      <span class="role-badge" id="cardRole">Locksmith</span>
+      <p>Residential &amp; Commercial Locks &bull; Digital Locks &bull; Key Cutting &bull; Automotive &amp; Gate Access</p>
+    </div>
+
+    <div class="cta-section">
+      <button type="button" class="btn-save" id="saveVcardBtn">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+          <polyline points="17 21 17 13 7 13 7 21"/>
+          <polyline points="7 3 7 8 15 8"/>
+        </svg>
+        <span>Save Contact</span>
+      </button>
+
+      <button type="button" class="btn-qr-toggle" id="toggleQrBtn" aria-label="Show QR Code">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+          <rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM18 18h3v3h-3zM14 19h2v2h-2zM19 14h2v2h-2z"/>
+        </svg>
+        <span>QR</span>
+      </button>
+    </div>
+
+    <div class="qr-drawer" id="qrDrawer">
+      <strong style="font-size:0.92rem; color:var(--gray-900); display:block;">Scan to Open Calling Card</strong>
+      <div class="qr-frame">
+        <img id="qrImage" alt="QR Code for Molino Garcia Calling Card" width="170" height="170" />
+      </div>
+      <div class="qr-url-label" id="qrUrlText"></div>
+      <button type="button" id="copyCardLinkBtn" class="mini-btn" style="width:100%; border-color:var(--red-primary); color:var(--red-primary);">
+        Copy Card Link for NFC / Sharing
+      </button>
+    </div>
+
+    <div class="contact-list">
+      <a href="tel:021946115" class="contact-row" id="mobileLink">
+        <div class="row-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+        </div>
+        <div class="row-text">
+          <small>Direct Locksmith Mobile</small>
+          <strong id="mobileText">021 946 115</strong>
+        </div>
+      </a>
+
+      <a href="tel:0800420420" class="contact-row" id="freephoneLink">
+        <div class="row-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </div>
+        <div class="row-text">
+          <small>AlarmLock Freephone</small>
+          <strong id="freephoneText">0800 420 420</strong>
+        </div>
+      </a>
+
+      <a href="mailto:info@alarmlock.co.nz" class="contact-row" id="emailLink">
+        <div class="row-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <div class="row-text">
+          <small>Email Address</small>
+          <strong id="emailText">info@alarmlock.co.nz</strong>
+        </div>
+      </a>
+
+      <a href="https://maps.google.com/?q=Unit+3,+19+Ormiston+Road,+East+Tamaki,+Auckland" target="_blank" rel="noopener" class="contact-row">
+        <div class="row-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div class="row-text">
+          <small>Workshop (Mon–Fri By Appt)</small>
+          <strong style="font-size:0.94rem;">Unit 3, 19 Ormiston Rd, East Tamaki</strong>
+        </div>
+      </a>
+
+      <div class="quick-pair">
+        <a href="sms:+6421946115" id="smsLink" class="mini-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          <span>Text / SMS</span>
+        </a>
+        <a href="index.html" class="mini-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span>Visit Website</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="card-footer">
+      AlarmLock Ltd &bull; <a href="products.html">Browse Security Products</a>
+    </div>
+  </main>
+
+  <script>
+    const CARD_PROFILE = {
+      firstName: "Molino",
+      lastName: "Garcia",
+      position: "Locksmith",
+      company: "AlarmLock Ltd",
+      mobileDisplay: "021 946 115",
+      mobileIntl: "+6421946115",
+      freephone: "0800 420 420",
+      email: "info@alarmlock.co.nz",
+      street: "Unit 3, 19 Ormiston Road",
+      suburb: "East Tamaki",
+      city: "Auckland",
+      country: "New Zealand",
+      website: "https://alarmlock.co.nz"
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const fullName = `${CARD_PROFILE.firstName} ${CARD_PROFILE.lastName}`;
+      document.getElementById("cardName").textContent = fullName;
+      document.getElementById("cardRole").textContent = CARD_PROFILE.position;
+      document.getElementById("cardInitials").textContent =
+        (CARD_PROFILE.firstName[0] || "") + (CARD_PROFILE.lastName[0] || "");
+
+      document.getElementById("mobileText").textContent = CARD_PROFILE.mobileDisplay;
+      document.getElementById("mobileLink").href = `tel:${CARD_PROFILE.mobileIntl}`;
+      document.getElementById("smsLink").href = `sms:${CARD_PROFILE.mobileIntl}`;
+
+      document.getElementById("freephoneText").textContent = CARD_PROFILE.freephone;
+      document.getElementById("freephoneLink").href = `tel:${CARD_PROFILE.freephone.replace(/\s+/g, "")}`;
+
+      document.getElementById("emailText").textContent = CARD_PROFILE.email;
+      document.getElementById("emailLink").href = `mailto:${CARD_PROFILE.email}`;
+
+      document.getElementById("saveVcardBtn").addEventListener("click", () => {
+        const vcardLines = [
+          "BEGIN:VCARD",
+          "VERSION:3.0",
+          `N:${CARD_PROFILE.lastName};${CARD_PROFILE.firstName};;;`,
+          `FN:${fullName}`,
+          `ORG:${CARD_PROFILE.company}`,
+          `TITLE:${CARD_PROFILE.position}`,
+          `TEL;TYPE=CELL,VOICE:${CARD_PROFILE.mobileIntl}`,
+          `TEL;TYPE=WORK,VOICE:${CARD_PROFILE.freephone}`,
+          `EMAIL;TYPE=PREF,INTERNET:${CARD_PROFILE.email}`,
+          `ADR;TYPE=WORK:;;${CARD_PROFILE.street};${CARD_PROFILE.suburb};${CARD_PROFILE.city};;${CARD_PROFILE.country}`,
+          `URL:${CARD_PROFILE.website}`,
+          "END:VCARD"
+        ].join("\r\n");
+
+        const blob = new Blob([vcardLines], { type: "text/vcard;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `${CARD_PROFILE.firstName}_${CARD_PROFILE.lastName}_AlarmLock.vcf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      });
+
+      const qrDrawer = document.getElementById("qrDrawer");
+      const toggleQrBtn = document.getElementById("toggleQrBtn");
+      const qrImage = document.getElementById("qrImage");
+      const qrUrlText = document.getElementById("qrUrlText");
+      const copyCardLinkBtn = document.getElementById("copyCardLinkBtn");
+
+      const currentCardUrl = window.location.href.startsWith("http")
+        ? window.location.href
+        : "https://alarmlock.co.nz/card.html";
+
+      qrUrlText.textContent = currentCardUrl;
+      qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&color=0F172A&bgcolor=FFFFFF&data=${encodeURIComponent(currentCardUrl)}`;
+
+      toggleQrBtn.addEventListener("click", () => {
+        qrDrawer.classList.toggle("open");
+      });
+
+      copyCardLinkBtn.addEventListener("click", () => {
+        navigator.clipboard.writeText(currentCardUrl);
+        copyCardLinkBtn.textContent = "Link Copied ✓";
+        setTimeout(() => {
+          copyCardLinkBtn.textContent = "Copy Card Link for NFC / Sharing";
+        }, 1800);
+      });
+    });
+  </script>
+</body>
+</html>

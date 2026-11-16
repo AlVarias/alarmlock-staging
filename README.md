@@ -1,16 +1,16 @@
-# AlarmLock New Zealand — Website Redesign
+# AlarmLock New Zealand — Red & White Website, E-Commerce Store & NFC Calling Card
 
-A responsive, high-contrast **Red & White** multi-page static website built for **AlarmLock Ltd** (`alarmlock.co.nz`), Auckland's locksmith and security hardware specialists.
+## Included Files
+- `index.html` — Home page (with Hero picture & Featured Yale 3109 Best-Seller picture)
+- `products.html` — Mini e-commerce storefront with product photos, quick-view specs & shopping cart
+- `about.html` — About Us (with East Tamaki Workshop / Mobile Van picture) & interactive Security Checklist
+- `contact.html` — Contact Us, map & booking form
+- `card.html` — **Hidden Digital Calling Card** for **Molino Garcia (Locksmith)** accessible directly via QR code or NFC tap (`https://alarmlock.co.nz/card.html`)
+- `products-data.js` — Product catalog photos & prices
+- `script.js` & `style.css` — Shared storefront scripts and Red & White styles
+- `images/` — Visual assets ready to be replaced with your own photos
 
-## Pages Included
-- `index.html` — Home page with direct dispatch contacts, core services, Yale 3109 spotlight, and NZ security statistics.
-- `products.html` — Interactive filterable product catalog (Digital Locks, Mechanical Locks, Automotive Keys, Remotes & Batteries, Gate Automation).
-- `about.html` — Company background (25+ years in Auckland), interactive Home & Business Security Checklist, and client testimonials.
-- `contact.html` — Direct phone lines (including Jesse at JB Electronics for Alarms & Cameras), East Tamaki workshop map, and appointment booking form.
-- `style.css` — Clean Red (`#D91E2A`) and White (`#FFFFFF`) responsive stylesheet.
-- `script.js` — Mobile menu toggle, live product search/filtering, interactive checklist counter, and booking form handler.
-
-## Hosting on GitHub Pages
-1. Create a new repository on GitHub (e.g., `alarmlock-nz`).
-2. Upload all files from this folder to the root of the repository (`index.html`, `products.html`, `about.html`, `contact.html`, `style.css`, `script.js`, `README.md`).
-3. Go to **Settings > Pages**, select **Deploy from a branch** (`main` / `/root`), and click **Save**.
+## Setting Up Molino Garcia's NFC & QR Calling Card (`card.html`)
+1. `card.html` has **no links** from `index.html`, `products.html`, `about.html`, or `contact.html`, and includes `<meta name="robots" content="noindex, nofollow" />`.
+2. Write the URL `https://alarmlock.co.nz/card.html` (or `https://<your-username>.github.io/<repo-name>/card.html`) to your NFC card (e.g., NTAG215 via NFC Tools) and generate your QR code to that same URL.
+3. To update Molino's direct mobile number or email later, edit `CARD_PROFILE` in `card.html`—the page links and the one-tap **Save Contact (.vcf)** download will update automatically.

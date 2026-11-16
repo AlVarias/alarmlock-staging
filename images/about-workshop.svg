@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <defs>
+    <linearGradient id="workshopBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FEF2F2"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#workshopBg)"/>
+  <rect x="44" y="64" width="270" height="236" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="3"/>
+  <path d="M44 78 A14 14 0 0 1 58 64 H300 A14 14 0 0 1 314 78 V116 H44 Z" fill="#D91E2A"/>
+  <text x="179" y="96" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">ALARMLOCK WORKSHOP</text>
+  <text x="179" y="144" fill="#0F172A" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Unit 3, 19 Ormiston Road</text>
+  <text x="179" y="164" fill="#475569" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">East Tamaki, Auckland</text>
+  <rect x="78" y="186" width="202" height="86" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+  <circle cx="134" cy="229" r="24" fill="#E2E8F0" stroke="#64748B" stroke-width="3" stroke-dasharray="6 3"/>
+  <circle cx="134" cy="229" r="8" fill="#D91E2A"/>
+  <rect x="172" y="218" width="84" height="12" rx="3" fill="#94A3B8"/>
+  <circle cx="176" cy="224" r="12" fill="#1E293B"/>
+  <text x="179" y="262" fill="#475569" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">PRECISION KEY CUTTING</text>
+  <rect x="336" y="64" width="260" height="236" rx="14" fill="#1E293B"/>
+  <text x="466" y="102" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">ONSITE MOBILE SERVICE</text>
+  <text x="466" y="122" fill="#FECACA" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">East Tamaki &bull; Papakura &bull; Auckland</text>
+  <path d="M368 212 H534 L556 236 V258 H368 Z" fill="#FFFFFF"/>
+  <rect x="368" y="176" width="136" height="44" rx="6" fill="#FFFFFF"/>
+  <path d="M504 184 H536 L552 212 H504 Z" fill="#CBD5E1"/>
+  <rect x="380" y="188" width="112" height="16" rx="3" fill="#D91E2A"/>
+  <text x="436" y="200" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">0800 420 420</text>
+  <circle cx="404" cy="258" r="16" fill="#0F172A" stroke="#94A3B8" stroke-width="4"/>
+  <circle cx="522" cy="258" r="16" fill="#0F172A" stroke="#94A3B8" stroke-width="4"/>
+  <rect x="170" y="324" width="300" height="42" rx="21" fill="#D91E2A"/>
+  <text x="320" y="350" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">25+ YEARS SERVING AUCKLAND</text>
+</svg>

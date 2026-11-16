@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#F8FAFC"/>
+  <circle cx="165" cy="135" r="56" fill="#E2E8F0" stroke="#64748B" stroke-width="4"/>
+  <circle cx="165" cy="135" r="38" fill="#CBD5E1" stroke="#475569" stroke-width="2"/>
+  <circle cx="165" cy="135" r="18" fill="#94A3B8"/>
+  <rect x="162" y="125" width="6" height="20" rx="2" fill="#0F172A"/>
+  <rect x="221" y="114" width="76" height="42" rx="4" fill="#94A3B8" stroke="#475569" stroke-width="3"/>
+  <line x1="255" y1="114" x2="255" y2="156" stroke="#475569" stroke-width="2"/>
+  <text x="200" y="236" fill="#1E293B" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">HEAVY-DUTY DEADBOLT</text>
+</svg>
